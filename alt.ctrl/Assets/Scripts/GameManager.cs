@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ranNumXpos = Random.Range(0,0);
+        ranNumXpos = Random.Range(-6.9f, 6.9f);
+        ranNumYpos = Random.Range(-3f, 3f);
     }
 }
