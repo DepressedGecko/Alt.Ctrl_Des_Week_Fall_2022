@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b02fb27e206ffc941b886e06d7dcbddb
+guid: 25b5ef7f3f803c945841691045203060
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -141,7 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-Player-Sheet_0
+      name: BnAppear_0
       rect:
         serializedVersion: 2
         x: 0
@@ -155,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e92b93ee309747646ac1b0f900a984a5
-      internalID: 1648873147
+      spriteID: 2c1d566a83435af4d83ff5504af96ab6
+      internalID: 1770319023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Player-Sheet_1
+      name: BnAppear_1
       rect:
         serializedVersion: 2
         x: 32
@@ -176,14 +176,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c192bbaf0829c244981baefb3bed178
-      internalID: -1315148265
+      spriteID: a3f3bccb44a17564d90d5c5165a0ad0b
+      internalID: 1010224785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Player-Sheet_2
+      name: BnAppear_2
       rect:
         serializedVersion: 2
         x: 64
@@ -197,14 +197,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f7139bee0b45e94a8ab1d151030ba5e
-      internalID: -1967861256
+      spriteID: bb8d235cab37b8a489f38f4c9aad306b
+      internalID: 1767828972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Player-Sheet_3
+      name: BnAppear_3
       rect:
         serializedVersion: 2
         x: 96
@@ -218,14 +218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25137e8cf67f55846a18721937474f01
-      internalID: -1814448760
+      spriteID: ead8afec708139e4091be44bce39a157
+      internalID: -88892859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Player-Sheet_4
+      name: BnAppear_4
       rect:
         serializedVersion: 2
         x: 128
@@ -239,14 +239,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9200bcba6a42604db2c53c94a246952
-      internalID: -451127675
+      spriteID: ca9b39b0583f61a45aa2db208909d466
+      internalID: 1482534744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Player-Sheet_5
+      name: BnAppear_5
       rect:
         serializedVersion: 2
         x: 160
@@ -260,14 +260,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0653de6960fad34ba2904ae1af17de8
-      internalID: -1666215730
+      spriteID: 3a144a495558c1842bb7fe2280900508
+      internalID: 2128266992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Player-Sheet_6
+      name: BnAppear_6
       rect:
         serializedVersion: 2
         x: 192
@@ -281,14 +281,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6dcc7fe4dff596418ff6d090e5a5636
-      internalID: -1149054152
+      spriteID: 6c7e25349f6a1a9438813cbb7825f467
+      internalID: -1737336977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Player-Sheet_7
+      name: BnAppear_7
       rect:
         serializedVersion: 2
         x: 224
@@ -302,14 +302,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5871a7fbbcab09b43a5e269906aeefc6
-      internalID: 1515985869
+      spriteID: 05e1b02815bfad04b90a3f0c9da1beec
+      internalID: -2088107897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Player-Sheet_8
+      name: BnAppear_8
       rect:
         serializedVersion: 2
         x: 256
@@ -323,14 +323,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b31b794d9158a664fb98f9d98ec8dd60
-      internalID: 704326197
+      spriteID: a6dd879cbbc85694284bc2ab87a38958
+      internalID: -181946973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Player-Sheet_9
+      name: BnAppear_9
       rect:
         serializedVersion: 2
         x: 288
@@ -344,14 +344,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cb926dc2eae31442bb07702853015f1
-      internalID: -272887309
+      spriteID: 45a23bc8a04a88b49a632ec01e3f9d6c
+      internalID: 1998224050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Player-Sheet_10
+      name: BnAppear_10
       rect:
         serializedVersion: 2
         x: 320
@@ -365,14 +365,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57bae7f50abf46b44adb6758918f3261
-      internalID: 990509308
+      spriteID: 2417291203e716048921e03fc61060a7
+      internalID: 351209438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Player-Sheet_11
+      name: BnAppear_11
       rect:
         serializedVersion: 2
         x: 352
@@ -386,14 +386,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1794116e2ddc9884a8df9bfdd7099823
-      internalID: 1395483112
+      spriteID: de6ce0aa5c06de441a26b192800d59b4
+      internalID: 1210027473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-Player-Sheet_12
+      name: BnAppear_12
       rect:
         serializedVersion: 2
         x: 384
@@ -407,8 +407,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9bc9b1f2c624544f998d16a6fc5bbf3
-      internalID: 254402371
+      spriteID: 478bcdfa282dba44e935b49b30b40f29
+      internalID: -17855501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BnAppear_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69910eea2389aea469b070b0ef8b28f3
+      internalID: 736823772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BnAppear_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf030469c0782bc45a13c99d17f795bf
+      internalID: 1310221179
       vertices: []
       indices: 
       edges: []
@@ -424,19 +466,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-Player-Sheet_1: -1315148265
-      Sprite-Player-Sheet_3: -1814448760
-      Sprite-Player-Sheet_8: 704326197
-      Sprite-Player-Sheet_9: -272887309
-      Sprite-Player-Sheet_5: -1666215730
-      Sprite-Player-Sheet_4: -451127675
-      Sprite-Player-Sheet_2: -1967861256
-      Sprite-Player-Sheet_6: -1149054152
-      Sprite-Player-Sheet_0: 1648873147
-      Sprite-Player-Sheet_12: 254402371
-      Sprite-Player-Sheet_10: 990509308
-      Sprite-Player-Sheet_7: 1515985869
-      Sprite-Player-Sheet_11: 1395483112
+      BnAppear_3: -88892859
+      BnAppear_11: 1210027473
+      BnAppear_0: 1770319023
+      BnAppear_2: 1767828972
+      BnAppear_10: 351209438
+      BnAppear_12: -17855501
+      BnAppear_13: 736823772
+      BnAppear_6: -1737336977
+      BnAppear_4: 1482534744
+      BnAppear_9: 1998224050
+      BnAppear_7: -2088107897
+      BnAppear_14: 1310221179
+      BnAppear_1: 1010224785
+      BnAppear_8: -181946973
+      BnAppear_5: 2128266992
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
