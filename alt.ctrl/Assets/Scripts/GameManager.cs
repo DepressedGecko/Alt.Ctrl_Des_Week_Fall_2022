@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
+    public GameObject note;
+    public float ranNumXpos;
+    public float ranNumYpos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +18,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        ranNumXpos = Random.Range(0,0);
     }
 }
