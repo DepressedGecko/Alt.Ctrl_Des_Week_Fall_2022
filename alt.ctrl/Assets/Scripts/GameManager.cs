@@ -5,12 +5,19 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    public GameObject note;
+    public GameObject notePrefab;
     public float ranNumXpos;
     public float ranNumYpos;
 
+    private Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
+    {
+        rb = this.GetComponent<Rigidbody2D>();
+    }
+
+    private void spawnNote()
     {
         
     }
@@ -20,5 +27,7 @@ public class GameManager : MonoBehaviour
     {
         ranNumXpos = Random.Range(-6.9f, 6.9f);
         ranNumYpos = Random.Range(-3f, 3f);
+
+       // Vector3 
     }
 }
