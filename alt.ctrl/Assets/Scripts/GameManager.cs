@@ -8,6 +8,10 @@ public class GameManager : MonoBehaviour
     private GameObject notePrefab;
     [SerializeField]
     private GameObject note;
+    [SerializeField]
+    private GameObject player;
+    [SerializeField]
+    private GameObject deathNotePrefab;
 
     public float ranNumXpos;
     public float ranNumYpos;
@@ -18,8 +22,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-
-
     }
 
     Vector2 RanNum()
@@ -43,6 +45,26 @@ public class GameManager : MonoBehaviour
             print("gay");
             spawnNote();
         }
-       
+
+        if (Input.GetKeyDown("h")) 
+        {          
+
+            Collider2D hit = Physics2D.OverlapCircle(player.transform.position, 0.12f, LayerMask.GetMask("Note ;)"));
+            
+
+            if (hit != null)
+            {
+
+                Instantiate(deathNotePrefab, note.transform.position, note.transform.rotation);
+                Destroy(note);
+                //increase score
+                spawnNote();
+
+            }
+            
+        }
+
     }
+
+   
 }
