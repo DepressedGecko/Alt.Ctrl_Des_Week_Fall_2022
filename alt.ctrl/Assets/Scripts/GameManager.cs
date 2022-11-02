@@ -54,11 +54,11 @@ public class GameManager : MonoBehaviour
             spawnNote();
         }
 
-        Collider2D hit = Physics2D.OverlapCircle(player.transform.position, 0.12f, LayerMask.GetMask("Note ;)"));
+
 
         if (Input.GetKeyDown("h")) 
-        {                      
-
+        {
+            Collider2D hit = Physics2D.OverlapCircle(player.transform.position, 0.12f, LayerMask.GetMask("Note ;)"));
             if (hit != null)
             {
                 Instantiate(deathNotePrefab, note.transform.position, note.transform.rotation);
@@ -69,10 +69,12 @@ public class GameManager : MonoBehaviour
             }
 
         }
-        else if (hit == null)
+        else
         {
             Destroy(note, 3f);
         }
+        
+
 
     }   
 
