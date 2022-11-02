@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerController2 : MonoBehaviour
 {
 
-    public float maxMoveSpeed = 10;
-    public float smoothTime = 0.3f;
+    public float maxMoveSpeed = 15;
+    public float smoothTime = 1f;
     Vector2 currentVelocity;
     bool control;
 
