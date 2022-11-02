@@ -39,38 +39,41 @@ public class GameManager : MonoBehaviour
         note = Instantiate(notePrefab, RanNum(), transform.rotation);
     }
 
+    private void despawnNote() 
+    { 
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
+
 
         if (Input.GetButtonDown("Jump"))
         {
             spawnNote();
         }
 
+        Collider2D hit = Physics2D.OverlapCircle(player.transform.position, 0.12f, LayerMask.GetMask("Note ;)"));
 
         if (Input.GetKeyDown("h")) 
-        {          
-
-            Collider2D hit = Physics2D.OverlapCircle(player.transform.position, 0.12f, LayerMask.GetMask("Note ;)"));
-            
+        {                      
 
             if (hit != null)
             {
-
                 Instantiate(deathNotePrefab, note.transform.position, note.transform.rotation);
                 Destroy(note);
                 //increase score
                 spawnNote();
 
             }
-            
+
         }
-        
-        else
+        else if (hit == null)
         {
             Destroy(note, 3f);
-            
-        }       
+        }
+
     }   
+
 }
