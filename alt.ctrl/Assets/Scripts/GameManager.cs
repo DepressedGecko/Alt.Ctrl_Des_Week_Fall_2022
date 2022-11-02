@@ -42,7 +42,6 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            print("gay");
             spawnNote();
         }
 
@@ -64,6 +63,13 @@ public class GameManager : MonoBehaviour
             
         }
 
+        /*
+        else if()
+        {
+            Destroy(note, 3f);
+        }
+        */
+        
     }
 
    

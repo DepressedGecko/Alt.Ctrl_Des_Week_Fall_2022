@@ -34,6 +34,7 @@ public class PlayerController2 : MonoBehaviour
             control = false;
         }
 
+        /*
         if(Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("SPACE");
@@ -41,7 +42,8 @@ public class PlayerController2 : MonoBehaviour
             //Cursor.visible = false;
             control = true;
         }
-        
+        */
+
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = Vector2.SmoothDamp(transform.position, mousePosition, ref currentVelocity, smoothTime, maxMoveSpeed);
     }
