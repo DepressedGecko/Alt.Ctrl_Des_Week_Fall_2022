@@ -496,7 +496,7 @@ MonoBehaviour:
   note: {fileID: 0}
   player: {fileID: 750258177}
   deathNotePrefab: {fileID: 6222725716889071571, guid: fee89f024b5b2094c9501a162f8f84cf, type: 3}
-  invisNoteFailState: {fileID: 0}
+  invisNoteFailState: {fileID: 8498763871468548905, guid: e970e262ac5e94b408e241213bd47f86, type: 3}
   ranNumXpos: 0
   ranNumYpos: 0
 --- !u!4 &782418482
