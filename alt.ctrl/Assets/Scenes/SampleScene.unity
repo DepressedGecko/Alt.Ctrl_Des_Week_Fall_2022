@@ -10148,6 +10148,7 @@ GameObject:
   - component: {fileID: 991023054}
   - component: {fileID: 991023053}
   - component: {fileID: 991023052}
+  - component: {fileID: 991023055}
   m_Layer: 0
   m_Name: MoreBlueTests
   m_TagString: Untagged
@@ -10242,6 +10243,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &991023055
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991023051}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00078244164, y: -0.002738644}
+  serializedVersion: 2
+  m_Radius: 0.13926452
 --- !u!1 &1396980938
 GameObject:
   m_ObjectHideFlags: 0
