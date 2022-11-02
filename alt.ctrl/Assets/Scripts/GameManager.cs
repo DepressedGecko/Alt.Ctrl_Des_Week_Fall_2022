@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     private GameObject player;
     [SerializeField]
     private GameObject deathNotePrefab;
+    [SerializeField]
+    private GameObject invisNoteFailState;
 
     public float ranNumXpos;
     public float ranNumYpos;
@@ -22,6 +24,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+
     }
 
     Vector2 RanNum()
@@ -44,6 +47,7 @@ public class GameManager : MonoBehaviour
         {
             spawnNote();
         }
+
 
         if (Input.GetKeyDown("h")) 
         {          
