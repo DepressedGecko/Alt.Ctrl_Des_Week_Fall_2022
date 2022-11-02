@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-
+        Invoke("spawnNote", 3f);
     }
 
     Vector2 RanNum()
@@ -37,24 +37,22 @@ public class GameManager : MonoBehaviour
     private void spawnNote()
     {
         note = Instantiate(notePrefab, RanNum(), transform.rotation);
+
+        //instantiate invis fail collider use note.transform.position and note.transform.rotation for the notes current location
+
+        Invoke("despawnNote", 3f);
     }
 
     private void despawnNote() 
-    { 
-        
+    {
+        Destroy(note);
+        CancelInvoke("despawnNote");
+        Invoke("spawnNote", 3f);
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
-        if (Input.GetButtonDown("Jump"))
-        {
-            spawnNote();
-        }
-
-
 
         if (Input.GetKeyDown("h")) 
         {
@@ -62,19 +60,12 @@ public class GameManager : MonoBehaviour
             if (hit != null)
             {
                 Instantiate(deathNotePrefab, note.transform.position, note.transform.rotation);
-                Destroy(note);
                 //increase score
-                spawnNote();
+                despawnNote();
 
             }
 
         }
-        else
-        {
-            Destroy(note, 3f);
-        }
-        
-
 
     }   
 
