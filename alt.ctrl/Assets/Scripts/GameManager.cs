@@ -62,15 +62,11 @@ public class GameManager : MonoBehaviour
             }
             
         }
-
-        /*
-        else if()
+        
+        else
         {
             Destroy(note, 3f);
-        }
-        */
-        
-    }
-
-   
+            
+        }       
+    }   
 }
