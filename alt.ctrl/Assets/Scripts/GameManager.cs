@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject notePrefab;
-    [SerializeField]
     private GameObject note;
     [SerializeField]
     private GameObject player;
@@ -14,6 +13,7 @@ public class GameManager : MonoBehaviour
     private GameObject deathNotePrefab;
     [SerializeField]
     private GameObject invisNoteFailState;
+    private GameObject invsNote;
 
     public float ranNumXpos;
     public float ranNumYpos;
@@ -21,13 +21,19 @@ public class GameManager : MonoBehaviour
     public int score;
     public Text scoreText;
 
+    public float spawnBuffer = 3f;
+    public float difficultyChanger = 5f;
+
+    public AudioSource source;
+    public AudioClip trumpetFail;
+
     private Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        Invoke("spawnNote", 3f);
+        Invoke("spawnNote", spawnBuffer);
     }
 
     Vector2 RanNum()
@@ -40,6 +46,7 @@ public class GameManager : MonoBehaviour
     private void spawnNote()
     {
         note = Instantiate(notePrefab, RanNum(), transform.rotation);
+        invsNote = Instantiate(invisNoteFailState, note.transform.position, note.transform.rotation);
 
         //instantiate invis fail collider use note.transform.position and note.transform.rotation for the notes current location
 
@@ -49,8 +56,10 @@ public class GameManager : MonoBehaviour
     private void despawnNote() 
     {
         Destroy(note);
+        Destroy(invsNote);
+
         CancelInvoke("despawnNote");
-        Invoke("spawnNote", 3f);
+        Invoke("spawnNote", spawnBuffer);
     }
 
     private void addScore()
@@ -73,10 +82,29 @@ public class GameManager : MonoBehaviour
                 addScore();
                 despawnNote();
 
+                // make the notes spawn half a second faster every 5 points the player collects, this time stops decreasing at 0.5 seconds
+                if (score >= difficultyChanger)
+                {
+                    spawnBuffer = (spawnBuffer - 0.5f);
+                    difficultyChanger = (difficultyChanger + 5f);
+                }
+
+                if (spawnBuffer <= 0.5f)
+                {
+                    spawnBuffer = 0.5f;
+                }
+            }
+
+            //fail note peram
+            Collider2D hit2 = Physics2D.OverlapCircle(player.transform.position, 0.12f, LayerMask.GetMask("FailNote"));
+            if (hit2 != null)
+            {
+                source.PlayOneShot(trumpetFail);
+                Instantiate(deathNotePrefab, note.transform.position, note.transform.rotation);
+                despawnNote();
             }
 
         }
-
     }   
 
 }
