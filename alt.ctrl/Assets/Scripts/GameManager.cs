@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
 
     public float ranNumXpos;
     public float ranNumYpos;
+
+    public int score;
+    public Text scoreText;
 
     private Rigidbody2D rb;
 
@@ -50,6 +53,12 @@ public class GameManager : MonoBehaviour
         Invoke("spawnNote", 3f);
     }
 
+    private void addScore()
+    {
+        score++;
+        scoreText.text = score.ToString();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -59,8 +68,9 @@ public class GameManager : MonoBehaviour
             Collider2D hit = Physics2D.OverlapCircle(player.transform.position, 0.12f, LayerMask.GetMask("Note ;)"));
             if (hit != null)
             {
+
                 Instantiate(deathNotePrefab, note.transform.position, note.transform.rotation);
-                //increase score
+                addScore();
                 despawnNote();
 
             }
