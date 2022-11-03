@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.813788, g: 0, b: 0.8396226, a: 0.21960784}
+  m_Color: {r: 0.36549184, g: 0.38849828, b: 0.5188679, a: 0.4862745}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -694,6 +694,7 @@ MonoBehaviour:
   scoreText: {fileID: 736121609}
   spawnBuffer: 3
   difficultyChanger: 5
+  noteSpawnTimer: 2.6
   source: {fileID: 782418483}
   trumpetFail: {fileID: 8300000, guid: 0cdc095e69c09574bb6958b433bb0254, type: 3}
   hitSound: {fileID: 8300000, guid: 1d25889f57cf68240803a90d4f1b001f, type: 3}
@@ -5613,7 +5614,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800388249}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.5274228, y: 4.53828, z: 0.054538958}
+  m_LocalPosition: {x: -6.79, y: 4.53828, z: 0.054538958}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10425,7 +10426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862660433}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 3.4883907, y: 4.37828, z: 0.054538958}
+  m_LocalPosition: {x: -1.7741883, y: 4.37828, z: 0.054538958}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15835,7 +15836,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805107229}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -9.111609, y: 4.53828, z: 0.054538958}
+  m_LocalPosition: {x: -14.374188, y: 4.53828, z: 0.054538958}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
