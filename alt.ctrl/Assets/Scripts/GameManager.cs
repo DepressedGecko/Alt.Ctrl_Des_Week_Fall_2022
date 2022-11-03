@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
 
     public AudioSource source;
     public AudioClip trumpetFail;
+    public AudioClip hitSound;
 
     private Rigidbody2D rb;
 
@@ -78,6 +79,7 @@ public class GameManager : MonoBehaviour
             if (hit != null)
             {
 
+                source.PlayOneShot(hitSound);
                 Instantiate(deathNotePrefab, note.transform.position, note.transform.rotation);
                 addScore();
                 despawnNote();
@@ -100,7 +102,6 @@ public class GameManager : MonoBehaviour
             if (hit2 != null)
             {
                 source.PlayOneShot(trumpetFail);
-                Instantiate(deathNotePrefab, note.transform.position, note.transform.rotation);
                 despawnNote();
             }
 
