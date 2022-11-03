@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown("h")) 
+        if (Input.GetKeyDown(KeyCode.Space)) 
         {
             Collider2D hit = Physics2D.OverlapCircle(player.transform.position, 0.12f, LayerMask.GetMask("Note ;)"));
             if (hit != null)

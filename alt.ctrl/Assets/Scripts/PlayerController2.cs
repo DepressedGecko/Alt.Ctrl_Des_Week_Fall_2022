@@ -24,7 +24,7 @@ public class PlayerController2 : MonoBehaviour
         float distanceToScreen = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
         targetPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distanceToScreen));
         transform.position = targetPos;
-        */
+        
     
         if(control == true)
         {
@@ -34,7 +34,7 @@ public class PlayerController2 : MonoBehaviour
             control = false;
         }
 
-        /*
+        
         if(Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("SPACE");
