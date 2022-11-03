@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     public float spawnBuffer = 3f;
     public float difficultyChanger = 5f;
 
+    public float noteSpawnTimer = 2.6f;
+
     public AudioSource source;
     public AudioClip trumpetFail;
     public AudioClip hitSound;
@@ -69,9 +71,31 @@ public class GameManager : MonoBehaviour
         scoreText.text = score.ToString();
     }
 
+    private void timer()
+    {
+        print("time");
+        if (noteSpawnTimer >= 2.6f)
+        {
+            print("timer started");
+        }
+
+        if (noteSpawnTimer > 0)
+        {
+            noteSpawnTimer -= Time.deltaTime;
+        }
+
+        if (noteSpawnTimer <= 0)
+        {
+            spawnNote();
+            noteSpawnTimer = 2.6f;
+        }
+
+    }
+
     // Update is called once per frame
     void Update()
     {
+        //timer();
 
         if (Input.GetKeyDown(KeyCode.Space)) 
         {
