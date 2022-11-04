@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9191908132245810084}
   - component: {fileID: 4178802835757177613}
   - component: {fileID: 6853043097720868309}
+  - component: {fileID: 6974649985102636321}
   m_Layer: 14
   m_Name: InvisCircle
   m_TagString: Untagged
@@ -122,3 +123,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6974649985102636321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8498763871468548905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd02d37479caa914fa65064b4aa0e769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

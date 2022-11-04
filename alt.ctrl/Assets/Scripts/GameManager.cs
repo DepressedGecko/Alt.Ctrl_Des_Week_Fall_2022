@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public int score;
     public Text scoreText;
 
-    public float spawnBuffer = 3f;
+    public float spawnBuffer = 1.66f;
     public float difficultyChanger = 5f;
 
     public float noteSpawnTimer = 2.6f;
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        Invoke("spawnNote", spawnBuffer);
+        InvokeRepeating("spawnNote", spawnBuffer, spawnBuffer);
     }
 
     Vector2 RanNum()
@@ -50,10 +50,11 @@ public class GameManager : MonoBehaviour
     {
         note = Instantiate(notePrefab, RanNum(), transform.rotation);
         invsNote = Instantiate(invisNoteFailState, note.transform.position, note.transform.rotation);
+        
 
         //instantiate invis fail collider use note.transform.position and note.transform.rotation for the notes current location
 
-        Invoke("despawnNote", 3f);
+       // Invoke("despawnNote", 3f);
     }
 
     private void despawnNote() 
@@ -61,8 +62,8 @@ public class GameManager : MonoBehaviour
         Destroy(note);
         Destroy(invsNote);
 
-        CancelInvoke("despawnNote");
-        Invoke("spawnNote", spawnBuffer);
+        //CancelInvoke("despawnNote");
+        //Invoke("spawnNote", spawnBuffer);
     }
 
     private void addScore()
@@ -108,6 +109,7 @@ public class GameManager : MonoBehaviour
                 addScore();
                 despawnNote();
 
+                /*
                 // make the notes spawn half a second faster every 5 points the player collects, this time stops decreasing at 0.5 seconds
                 if (score >= difficultyChanger)
                 {
@@ -119,6 +121,7 @@ public class GameManager : MonoBehaviour
                 {
                     spawnBuffer = 0.5f;
                 }
+                */
             }
 
             //fail note peram

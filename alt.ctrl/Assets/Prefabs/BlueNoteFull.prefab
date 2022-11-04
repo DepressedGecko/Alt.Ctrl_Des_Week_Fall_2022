@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5552552904979659721}
   - component: {fileID: 5552552904979659720}
   - component: {fileID: 5552552904979659723}
+  - component: {fileID: 2658176758038202764}
   m_Layer: 7
   m_Name: BlueNoteFull
   m_TagString: Untagged
@@ -122,3 +123,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.14
+--- !u!114 &2658176758038202764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5552552904979659727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd02d37479caa914fa65064b4aa0e769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
