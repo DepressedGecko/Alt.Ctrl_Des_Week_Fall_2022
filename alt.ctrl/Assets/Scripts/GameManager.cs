@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public int score;
     public Text scoreText;
 
-    public float spawnBuffer;
+    public float spawnBuffer = 3f;
     public float difficultyChanger = 5f;
 
     public float noteSpawnTimer = 2.6f;
@@ -31,27 +31,14 @@ public class GameManager : MonoBehaviour
     public AudioClip hitSound;
 
     private Rigidbody2D rb;
-    public float bpm = 100;
-    public float beatsPerSec;
 
-    public float animationTime;
     // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        beatsPerSec = bpm / 60;
-        
-        
-        StartCoroutine(spawnNote());
-        
-        Invoke("Song", animationTime / 2);
-        
+        Invoke("spawnNote", spawnBuffer);
     }
 
-    private void Song() 
-    {
-        Instantiate(source);
-    }
     Vector2 RanNum()
     {
         ranNumXpos = Random.Range(-6.9f, 6.9f);
@@ -59,24 +46,18 @@ public class GameManager : MonoBehaviour
         return new Vector2(ranNumXpos,ranNumYpos);
     }
 
-    private IEnumerator spawnNote()
+    private void spawnNote()
     {
-        
         note = Instantiate(notePrefab, RanNum(), transform.rotation);
         invsNote = Instantiate(invisNoteFailState, note.transform.position, note.transform.rotation);
-        animationTime = note.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length;
-        
+
         //instantiate invis fail collider use note.transform.position and note.transform.rotation for the notes current location
-        yield return new WaitForSeconds(beatsPerSec * 2);
-        despawnNote();
-        StartCoroutine(spawnNote());
-        
+
+        Invoke("despawnNote", 3f);
     }
 
-    
     private void despawnNote() 
     {
-        
         Destroy(note);
         Destroy(invsNote);
 
