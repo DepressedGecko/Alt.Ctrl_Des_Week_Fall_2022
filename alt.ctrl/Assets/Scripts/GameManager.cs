@@ -43,8 +43,8 @@ public class GameManager : MonoBehaviour
         
         
         StartCoroutine(spawnNote());
-
-        Song();
+        
+        Invoke("Song", animationTime / 2);
         
     }
 
@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
         animationTime = note.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length;
         
         //instantiate invis fail collider use note.transform.position and note.transform.rotation for the notes current location
-        yield return new WaitForSeconds(beatsPerSec);
+        yield return new WaitForSeconds(beatsPerSec * 2);
         despawnNote();
         StartCoroutine(spawnNote());
         
